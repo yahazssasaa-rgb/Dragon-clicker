@@ -25,7 +25,8 @@ jobs:
       - name: Instalar dependências web
         run: |
           cd artifacts/zenkai-game
-          npm install
+          corepack enable
+          pnpm install
 
       - name: Sincronizar Capacitor Android
         run: |
