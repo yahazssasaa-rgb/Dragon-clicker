@@ -17,6 +17,21 @@ jobs:
           distribution: temurin
           java-version: 17
 
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar dependências web
+        run: |
+          cd artifacts/zenkai-game
+          npm install
+
+      - name: Sincronizar Capacitor Android
+        run: |
+          cd artifacts/zenkai-game
+          npx cap sync android
+
       - name: Dar permissão ao Gradle
         run: chmod +x artifacts/zenkai-game/android/gradlew
 
