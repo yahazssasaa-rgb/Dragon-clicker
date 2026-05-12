@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Pixel Zenkai Clicker</string>
+    <string name="title_activity_main">Pixel Zenkai Clicker</string>
+    <string name="package_name">com.roselio.pixelzenkaiclicker</string>
+    <string name="custom_url_scheme">com.roselio.pixelzenkaiclicker</string>
+</resources>
